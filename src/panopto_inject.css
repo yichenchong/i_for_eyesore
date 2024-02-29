@@ -1,0 +1,7 @@
+a#siteLogo_customerLogoLink img {
+  display: none;
+}
+
+div#headerWrapper > div > div:has(> svg), button#createMenuButton {
+  background-color: #003e74;
+}

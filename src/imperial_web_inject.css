@@ -1,0 +1,26 @@
+.fixed .navigation-header a.brand .header-logo {
+  display: none !important;
+}
+
+.navigation--rebranded:not(.fixed) .navigation-header a.brand svg.header-logo {
+  display: none !important;
+}
+
+.fixed.navigation--rebranded .navigation-header h1 a.brand {
+  background-color: #fff;
+}
+
+.navigation--rebranded .navigation-header h1 a.brand {
+  background-color: #003e74;
+}
+.navigation--rebranded .navigation-header h1 a.brand:hover {
+  background-color: #ebeeee;
+}
+
+.i-for-eyesore-replacement-logo-flexible {
+  color: white;
+}
+
+.navigation--rebranded .navigation-header h1 a.brand:hover .i-for-eyesore-replacement-logo-flexible {
+  color: #003e74;
+}
