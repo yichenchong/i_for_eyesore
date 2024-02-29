@@ -21,7 +21,6 @@ To run this repository from its source code, just load it as an unpacked session
 | Chrome   | >= 105           |
 | Edge     | >=120            |
 | Chromium | >= 105           |
-|----------|------------------|
 
 ## Contribution Guidelines
 
