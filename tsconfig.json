@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types",
+    ],
+  },
+  "include": [
+    "./src/**/*",
+    "tests/**/*"
+  ],
+}

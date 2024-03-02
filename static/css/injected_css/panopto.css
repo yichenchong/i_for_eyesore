@@ -1,0 +1,21 @@
+a#siteLogo_customerLogoLink img {
+  display: none;
+}
+
+div#headerWrapper > div > div:has(> svg), button#createMenuButton {
+  background-color: #003e74;
+}
+
+div.branded-button {
+  border-color: #003e74 !important;
+  background-color: #003e74 !important;
+}
+
+div.branded-button:hover:not(.disabled) {
+  border-color: #01325d !important;
+  background-color: #01325d !important;
+}
+
+li.selected.accent-left-border {
+  border-left-color: #003e74 !important;
+}

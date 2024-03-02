@@ -8,11 +8,10 @@ This is a Chrome extension that attempts to correct some of the more egregious c
 ## Getting Started
 
 If you are not planning to actively develop, please try to install the extension from the Chrome Web Store.
-It is my hope that
 
 (This is not currently published yet, but pending approval)
 
-To run this repository from its source code, just load it as an unpacked session
+To run this repository from its source code, run `node build.mjs` or `npm run build`, which should convert this root directory into a valid unpacked extension, which can then be loaded via `chrome://extensions` in Developer Mode.
 
 ### Prerequisites
 
@@ -30,7 +29,8 @@ Any contributions to this project should be made through pull request, subject t
 - Changes should not be made to the semantic meaning or navigation flow of webpages - for example, changing logos to roughly semantically equivalent text is allowed, but changing the text content of an article or removing a link would not be
 
 ### Development Roadmap
-- [ ] Refactor the static content script injections into a more dynamic content script injection, and refactor to remove duplication
+- [x] Refactor the static content script injections into a more dynamic content script injection, and refactor to remove duplication
+- [ ] Automate reversioning and add some simple CI
 - [ ] Work on replacing favicons
 - [ ] Add customisability options (user settings to turn off/on items, maintaining everything as a sensible default)
 - [ ] Look into developing for alternative non-Chromium browsers (Safari, Firefox, Opera)
@@ -42,9 +42,9 @@ Any contributions to this project should be made through pull request, subject t
 
 The extension uses the Chrome extension content script functionality to inject scripts to modify the DOM and CSS on certain sites.
 
-**Why use pure JavaScript and not &lt;insert web technology here&gt;?**
+**Why use pure TypeScript and not &lt;insert web technology here&gt;?**
 
-This is meant to be a quick, minimal project, and I don't want to have to CI my build process. Also, the extension is insanely simple, and is meant to be easy to understand. I don't want a low bus factor on this. That being said, I am considering moving to TypeScript, to add better interfaces to be rigorous while reducing the code duplication.
+The extension is insanely simple, and is meant to be easy to understand. I don't want a low bus factor on this. That being said, TypeScript, in my opinion, has a low learning curve once you know JavaScript, and the build process is simple enough.
 
 **I'm not too sure how to code well, but I would like something to change on this webpage.**
 Create an issue on this repository, and put the details of the site you'd like for the extension to modify.
